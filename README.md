@@ -61,3 +61,55 @@ Adımlar:
 •	Normalizasyon: Mesafeleri normalize ederek 0 ile 1 arasında bir değer elde edilir. Bu, verilerin daha uyumlu olmasını sağlar. Normalizasyon için mesafeyi visibleDistance ile bölünür.
 
 •	Değer Tersine Çevirme: Engellere yakınlaştıkça değerlerin artmasını sağlamak için mesafe değerlerini tersine çevirilir.
+
+# ANN Modeli: Yapay Sinir Ağı
+
+Artık toplanan verilerle bir ANN modeli oluşturacağız. Bu model, aracın hareketini kontrol etmek için eğitim alacak.
+
+Adımlar:
+
+•	Yeni Script: ANNDrive_sc adında bir script oluşturun ve ANN kontrolündeki ANNKart'a ekleyin.
+
+•	İleri ve Geri Yön Kontrolü: translation ve rotation verilerini kullanarak ANN modelini eğitin. Bu veriler, aracın hızını ve yönünü belirleyecektir.
+
+# Adaptive Learning ve Ağırlık Yönetimi
+
+ANN'nin başarısını iyileştirmek için, öğrenme süreci boyunca ağırlıkları güncelleyeceğiz.
+
+Adımlar:
+
+•	Epoch Başlangıcı: Her epoch başında ağırlıkları kaydedin. Eğer hata iyileşmezse, önceki ağırlıkları kullanarak öğrenme oranını düşürün.
+
+•	Ağırlık Kaydetme: Eğitim sırasında ağırlıkları kaydedin ve dosyaya yazın.
+
+•	Dosyadan Okuma: Eğitim sonunda öğrenilen ağırlıkları dosyadan okuyarak devam edin.
+
+# Veri Setinin Kaydedilmesi ve İncelenmesi
+
+Toplanan verileri kaydedip, gürültüyü azaltarak daha temiz bir veri seti elde edeceğiz.
+
+Adımlar:
+
+•	Veri Kaydetme: Toplanan veriyi dosyaya kaydedin. System.IO kütüphanesini kullanarak CSV formatında veri kaydedebilirsiniz.
+
+•	Veri İnceleme: Veri setinde gereksiz verileri (noise) temizleyin ve sadece önemli verileri saklayın.
+
+# Sonuç ve İyileştirme
+
+Oyun sonunda, ANN modelini kullanarak go-kart aracının daha doğru hareket etmesini sağlamak için modelin başarısını izleyin. Gerekirse, veriyi manuel olarak düzenleyerek iyileştirmeler yapın.
+
+Adımlar:
+
+•	Eğitim Sonrası Değerlendirme: Modelin hata oranını değerlendirin ve gerektiğinde yeniden eğitim uygulayın.
+
+•	Modeli İyileştirme: Kullanıcı verisini Excel'de açarak çelişen verileri düzeltin ve modeli optimize edin.
+
+Yarış oyununda, oyuncu ve ANN kontrollü araçlar arasında veri toplanarak ANN modeli ile otonom sürüş gerçekleştirilmiştir. Modelin eğitim verisi, aracın çevresindeki engellere olan mesafeleri ve araç hareketini içermektedir. Elde edilen model, oyundaki engellere göre doğru hareketleri yapacak şekilde optimize edilmiştir.
+
+![image](https://github.com/user-attachments/assets/03e95b2e-049e-4c83-ac1c-7e5c536f201a)
+
+![image](https://github.com/user-attachments/assets/8fb5e5b2-a19f-4a6f-a566-b901c4d3cc92)
+
+![image](https://github.com/user-attachments/assets/02ff88c3-405d-4fc9-95dc-bd9391deef90)
+
+![image](https://github.com/user-attachments/assets/0d15bc7a-e548-4ab2-b727-917f08bf1a5f)
