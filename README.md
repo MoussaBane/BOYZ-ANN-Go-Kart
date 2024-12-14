@@ -15,8 +15,8 @@ Adımlar:
 
 •	Araç Hareketi:
 
-Klavye ile Hareket: İlk araç (Kart) için klavye kontrolü eklenir. Bu, araç hareketini sağlamak için klavye tuşlarını kullanmanızı sağlar.
-ANN ile Hareket: İkinci araç (ANNKart), ANN tarafından kontrol edilecek.
+  Klavye ile Hareket: İlk araç (Kart) için klavye kontrolü eklenir. Bu, araç hareketini sağlamak için klavye tuşlarını kullanmanızı sağlar.
+  ANN ile Hareket: İkinci araç (ANNKart), ANN tarafından kontrol edilecek.
 
 # Script Oluşturma ve Araba Kontrolü
 
@@ -38,11 +38,11 @@ Adımlar:
 
 •	Mesafe Hesaplamaları: Çeşitli yönlerde ışınlar göndererek çevredeki engellere olan mesafeyi ölçülür. Bu mesafeler, ANN'ye girdi olarak sağlanacaktır:
 
-İleri Mesafe: Aracın önüne bir ışın gönderilir.
+  İleri Mesafe: Aracın önüne bir ışın gönderilir.
 
-Sağ ve Sol Mesafe: Araç sağ ve sol yönlere ışınlar göndererek mesafeyi ölçülür.
+  Sağ ve Sol Mesafe: Araç sağ ve sol yönlere ışınlar göndererek mesafeyi ölçülür.
 
-Çapraz Mesafeler: Sağ ve sol ileri 45 derecelik açılarda ışın gönderilir.
+  Çapraz Mesafeler: Sağ ve sol ileri 45 derecelik açılarda ışın gönderilir.
 
 Script için Değişkenler:
 
